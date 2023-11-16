@@ -1,16 +1,32 @@
-# machine_learning_project-supervised-learning
+# machine_learning_project-supervised-learning-ChristinePavlik
 
 ## Project Outcomes
-- Supervised Learning: use supervised learning techniques to build a machine learning model that can predict whether a patient has diabetes or not, based on certain diagnostic measurements.The project involves three main parts: exploratory data analysis, preprocessing and feature engineering, and training a machine learning model. 
-### Duration:
-Approximately 3 hours and 20 minutes.
-### Project Description:
-In this projects, you will apply supervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
+- Practice coding and implementing machine learning models, cleaning data, and interpreting results.
 
-The data set for this project is the "Diabetes" dataset from the National Institute of Diabetes and Digestive and Kidney Diseases 
-The project will involve the following tasks:
+## Workflow:
+- First, read the .csv datafile provided.
+- Explore the data, identify missing values and outliers.
+- Clean the data - replace missing values with means, inspect variables for outliers.
+- Visualize relationships among explanitory variables and between dependants and independants.
+- Use logistic regression to develop a classification model to distinguish between patients who had diabetes and patients who did not.
+- Aggregate the outcome of other machine learning models into an ensemble model.
+- Compare the performance of the original logistic regression and the ensemble model.
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Supervised learning: We will use the Diabetes dataset to build a machine learning model that can predict whether a patient has diabetes or not, using appropriate evaluation metrics such as accuracy, precision, recall, F1-score, and ROC-AUC. We will select at least two models, including one ensemble model, and compare their performance.
+  ## Difficulties:
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+  As this is my first experience in using modeling to make predictions rather than interpret input parameters, it was a very interesting
+  exercise. It's a totally new way to use models, and it was a huge learning experience.
+
+  ## Key findings:
+
+  In this exercise, the original logistic regression model performed the best. It was a fairly poor performing model, accurately predicting
+  whether patients had diabetes or not only 76.6% of the time on novel data. However, the accuracy and type 2 error rate was similar between the training
+  and test data, which indicates that the model was not overfitting the data. As well, there was high Type 2 error (false negative), which is
+  extremely undesireable in a clinical test. The ensemble model did not improve on either the accuracy or Type 2 error rate over the
+  logistic regression.
+
+  ## If I Had More Time
+
+  With more time, I would try a polynomial regression to see if a higher order logistic regression could improve the accuracy of the model. As well,
+  I might try including interaction terms to the model, though none of the variables appeared highly correlated, there could have been a correlation
+  between them that was not linear that might improve model performance.
